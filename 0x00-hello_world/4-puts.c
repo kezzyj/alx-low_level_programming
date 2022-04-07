@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-#to print a string
+/* to print a string */
 
 int main(void)
 
