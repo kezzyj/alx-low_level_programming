@@ -1,8 +1,12 @@
 #include <stdio.h>
 
-/* to print a string */
+/**                                                                     
+*	Description: main - prints out a string using puts,
+*	Return: 0 if success. 
+*/      
 
-int main(void) /* To print string below */
+int main(void)
+
 {
 	puts("\"Programming is like building a multilingual puzzle");
 	return (0);
