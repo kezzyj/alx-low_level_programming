@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 /**
-*	Description: main print all size of types
-*	Return: return 0 on success
+*	Description: main - prints size of types
+*	Return: o when successful
 */
 
 int main(void)
