@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <time.h>
+#include <stdio.h>
 
 /**
 *	Description: main - this prints positive and negative integers,
@@ -13,7 +14,7 @@ int main(void)
 
 
 	 srand(time(0));
-	 n = rand() - RANDMAX / 2;
+	 n = rand() - RAND_MAX / 2;
 
 	 if(n > 0)
 	 {
