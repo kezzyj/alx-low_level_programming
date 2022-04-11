@@ -2,7 +2,7 @@
 
 /**
 *	Description: main - print all letters except,
-*	Return - 0 on success
+*	Return: 0 on success
 */
 
 int main(void)
