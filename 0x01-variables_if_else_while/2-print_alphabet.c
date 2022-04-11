@@ -8,10 +8,11 @@
 int main(void)
 {
 	char lowerAlphabets[26] = "abcdefghijklmnopqrstuvwxyz";
+	int i;
 
-	while (lowerAlphabets < 26)
+	for (i = 0; i < 26; i++)
 	{
-		putchar(lowerAlphabets);
+		putchar(lowerAlphabets[i]);
 	}
 
 	putchar("\n");
