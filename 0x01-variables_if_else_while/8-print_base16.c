@@ -12,7 +12,7 @@ int main(void)
 
 	for (i = 0; i < 16; i++)
 	{
-		putchar(hexa[1]);
+		putchar(hexa[i]);
 	}
 	putchar('\n');
 	return (0);
