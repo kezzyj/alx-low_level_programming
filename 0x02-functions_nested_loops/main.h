@@ -5,5 +5,5 @@
 
 int _putchar(int c)
 {
-	return (0);
+	return (c);
 }
