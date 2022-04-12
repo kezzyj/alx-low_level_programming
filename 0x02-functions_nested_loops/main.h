@@ -3,7 +3,7 @@
 *	Return: no return
 */
 
-int _putchar()
+int _putchar(int)
 {
-
+	return (0);
 }
