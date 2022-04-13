@@ -5,13 +5,9 @@
 * Return:void
 */
 
-
-
 void jack_bauer(void)
 
 {
-
-
 
 	int h1;
 
@@ -22,8 +18,6 @@ void jack_bauer(void)
 	int m2;
 
 	int a = 9;
-
-
 
 	h2 = 0;
 
@@ -87,8 +81,4 @@ void jack_bauer(void)
 
 	}
 
-
-
 }
-
-
