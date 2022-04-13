@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-*	Description: int _isalpha - function to check if
+*	Description: _isalpha - function to check if
 *	letter is alpha
 *	@c:Variable to check
 *	Return: 1 on success
