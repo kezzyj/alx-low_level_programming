@@ -2,6 +2,8 @@
 
 /**
 *	Description: _islower - prints charater if lower
+*	Parameter: c - to be checked
+*	Return: 1 on success
 */
 
 int _islower(int c)
