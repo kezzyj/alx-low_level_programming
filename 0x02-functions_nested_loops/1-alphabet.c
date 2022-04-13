@@ -8,13 +8,16 @@
 
 int main(void)
 {
-	char alpha[26] = "abcdefghijklmnopqrstuvwxyz";
-	int i;
-
-	for (i = 0; i < 26; i++)
+	void print_alphabet(void)
 	{
-		_putchar(alpha[i]);
+		char alpha[26] = "abcdefghijklmnopqrstuvwxyz";
+		int i;
+
+		for (i = 0; i < 26; i++)
+		{
+			_putchar(alpha[i]);
+		}
+		_putchar('\n');
+		return (0);
 	}
-	_putchar('\n');
-	return (0);
 }
