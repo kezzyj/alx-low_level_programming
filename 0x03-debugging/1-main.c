@@ -1,7 +1,8 @@
 #include <stdio.h>
 
 /**
-* main - causes an infinite loop
+* Description: main - causes an infinite loop
+* @i: variable used in checking
 * Return: 0
 */
 
