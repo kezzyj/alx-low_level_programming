@@ -13,14 +13,19 @@ char *_strcpy(char *dest, char *src)
 {
 	size_t i;
 
-	for (i = 0; i < strlen(src) && src[i] != '\0'; i++)
-
+	for (i = 0; i < strlen(src); i++)
+	{
 		dest[i] = src[i];
+		
+		if src[i] == '\0';
 
-	for ( ; i < strlen(src); i++)
+			dest[i] += src[i];
+	}
+
+/**	for ( ; i < strlen(src); i++)
 
 		dest[i] = '\0';
-
+*/
 	return (dest);
 
 }
