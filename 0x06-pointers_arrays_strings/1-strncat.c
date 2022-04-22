@@ -11,6 +11,7 @@
 
 char *_strncat(char *dest, char *src, int n)
 {
-	dest += strcat(dest, src, n);
+	dest += strncat(dest, src, n);
+
 	return (dest);
 }
