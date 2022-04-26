@@ -14,3 +14,4 @@ char *_strpbrk(char *s, char *accept)
 
 	ret = strpbrk(s, accept);
 	return (ret);
+}
