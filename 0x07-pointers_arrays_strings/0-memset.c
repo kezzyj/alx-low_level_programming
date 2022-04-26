@@ -9,8 +9,8 @@
 * Return: A pointer to the filled memory area @s.
 */
 
-char *_memset(char *s, char  c, unsigned int  n)
+char *_memset(char *s, char b, unsigned int n)
 {
-	s = memset(s, c, n);
+	s = memset(s, b, n);
 	return (s);
 }
