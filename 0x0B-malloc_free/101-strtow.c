@@ -1,4 +1,4 @@
-nclude "main.h"
+#include "main.h"
 
 int word_len(char *str);
 
