@@ -12,8 +12,5 @@
 
 char *str_concat(char *s1, char *s2)
 {
-	char m;
-
-	m = strcat(s1, s2);
-	return (m);
+	return (strcat(s1, s2));
 }
