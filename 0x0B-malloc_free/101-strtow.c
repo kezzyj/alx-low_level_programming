@@ -1,3 +1,5 @@
+nclude "main.h"
+
 int word_len(char *str);
 
 int count_words(char *str);
