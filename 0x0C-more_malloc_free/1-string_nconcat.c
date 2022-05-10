@@ -12,21 +12,32 @@
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	char *mem = malloc(sizeof(char) * strlen(s1));
-	
+	char *concat;
+	unsigned int len = n, index;
+
 	if (s1 == NULL)
 		s1 = "";
 	if (s2 == NULL)
+
 		s2 = "";
-	mem = strncat(s1, s2, n);
-	if (mem == NULL)
-	{
+	for (index = 0; s1[index]; index++)
+
+		len++;
+
+	concat = malloc(sizeof(char) * (len + 1));
+	if (concat == NUL)
+
 		return (NULL);
-	}
-	else (n >= strlen(s2))
-	{
-		mem = strcat(s1, s2);
-		return (mem);
-	}
-	return (mem);
+	len = 0;
+
+	for (index = 0; s1[index]; index++)
+
+		concat[len++] = s1[index];
+
+	for (index = 0; s2[index] && index < n; index++)
+
+		concat[len++] = s2[index];
+
+	concat[len] = '\0';
+	return (concat);
 }
