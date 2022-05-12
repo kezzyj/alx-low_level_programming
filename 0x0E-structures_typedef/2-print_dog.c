@@ -5,25 +5,21 @@
  * @d: The struct dog to be printed.
  */
 
-void print_dog(struct dog *d)
-{
-	if (d != NULL)
-	{
-		if ((*d).name == NULL)
-			printf("nil");
+void print_dog(struct dog *d)                                            
+{                       
+	char *empty = "nil";
+	if (d != NULL)                                                  
+	{                                               
+		if ((*d).name == NULL)  
+			printf("Name: %s\n", empty); 
+		printf("Name: %s\n", (*d).name);
 
-		printf("%s\n", (*d).name);
+		if ((*d).age < 0 )  
+			printf("Age: %s\n", empty); 
+		printf("Age: %f\n", (*d).age);  
 
-		if ((*d).age == NULL) 
-			printf("nil"); 
-
-		printf("%f\n", (*d).age);
-
-		if ((*d).owner == NULL)
-			printf("nil");
-
-		printf("%s\n", (*d).owner);
-	}
-}
-
-
+		if ((*d).owner == NULL)    
+			printf("Owner: %s\n", empty); 
+		printf("Owner: %s\n", (*d).owner);     
+	}                                                            
+}  
