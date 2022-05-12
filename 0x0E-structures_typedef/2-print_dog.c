@@ -5,34 +5,34 @@
  * @d: The struct dog to be printed.
  */
 
-void print_dog(struct dog *d)                                            
-{                       
+void print_dog(struct dog *d) 
+{
 	char *empty = "nil";
-	if (d != NULL)                                                  
-	{                                               
+	if (d != NULL) 
+	{
 		if ((*d).name == NULL)
-		{	
+		{
 			printf("Name: %s\n", empty);
 		}
 		else
-		{	
+		{
 		printf("Name: %s\n", (*d).name);
 		}
 		if ((*d).age < 0 )
-		{	
+		{
 			printf("Age: %s\n", empty);
 		}
 		else
-		{	
+		{
 		printf("Age: %f\n", (*d).age);
-		}	
+		}
 		if ((*d).owner == NULL)
-		{	
+		{
 			printf("Owner: %s\n", empty);
 		}
 		else
 		{	
 		printf("Owner: %s\n", (*d).owner);
 		}	
-	}                                                            
-}  
+	} 
+} 
