@@ -3,11 +3,12 @@
 /**
  * print_dog - Prints a struct dog.
  * @d: The struct dog to be printed.
+ * @empty: variables used for nil
  */
 
 void print_dog(struct dog *d) 
 {
-	char *empty = "nil";
+	char *empty = "(nil)";
 	if (d != NULL) 
 	{
 		if ((*d).name == NULL)
@@ -28,7 +29,7 @@ void print_dog(struct dog *d)
 		}
 		if ((*d).owner == NULL)
 		{
-			printf("Owner: %s\n", empty);
+			printf("Owner: (nil)\n");
 		}
 		else
 		{	
