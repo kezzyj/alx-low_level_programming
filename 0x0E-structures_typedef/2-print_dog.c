@@ -3,7 +3,7 @@
 /**
  * print_dog - Prints a struct dog.
  * @d: The struct dog to be printed.
- * @empty: variables used for nil
+ * @*empty: variables used for nil
  */
 
 void print_dog(struct dog *d) 
