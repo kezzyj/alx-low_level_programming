@@ -11,12 +11,8 @@
 
 int sum_them_all(const unsigned int n, ...)
 {
-
 	va_list nums;
-
 	unsigned int index, sum = 0;
-
-
 
 	va_start(nums, n);
 
@@ -26,5 +22,4 @@ int sum_them_all(const unsigned int n, ...)
 
 	va_end(nums);
 	return (sum);
-
 }
