@@ -7,12 +7,12 @@ list_t *add_node(list_t **head, const char *str)
 
 	if (new == NULL)
 		return (NULL);
-	for (; strlen(str); str++)
-	{
+	for (; strlen(str); len++)
+
 	new -> str = strdup(str);
 	new -> len = len;
 	new -> next = *head;
-	*head = str;
-	}
+	*head = new;
+
 	return (new);
 }
