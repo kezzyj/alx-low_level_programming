@@ -26,7 +26,7 @@ list_t *add_node_end(list_t **head, const char *str)
 	else
 	{
 		buffer = *head;
-		for (; buffer->next == NULL;)
+		for (; buffer->next;)
 			buffer = buffer->next;
 		buffer->next = first;
 	}
