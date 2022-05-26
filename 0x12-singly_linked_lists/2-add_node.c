@@ -7,11 +7,10 @@ list_t *add_node(list_t **head, const char *str)
 
 	if (new == NULL)
 		return (NULL);
-	for (len = 0; str[len]; len++);
-
-	new -> str = strdup(str);
-	new -> len = len;
-	new -> next = *head;
+	for(len = 0; sr[len]; len++);
+	new->str = strdup(str);
+	new->len = len;
+	new->next = *head;
 	*head = new;
 
 	return (new);
