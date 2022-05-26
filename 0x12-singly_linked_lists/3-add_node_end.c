@@ -9,7 +9,7 @@
 
 list_t *add_node_end(list_t **head, const char *str)
 {
-	list_t *first;
+	list_t *first, *buffer;
 	int index = 0;
 
 	first =  malloc(sizeof(list_t));
@@ -25,8 +25,10 @@ list_t *add_node_end(list_t **head, const char *str)
 		*head = first;
 	else
 	{
-		for (; (*head)->next == NULL;)
-		(*head)->next = first;
+		buffer = *head;
+		for (; buffer->next == NULL;)
+			buffer = buffer->next;
+		buffer->next = first;
 	}
 	return (first);
 }
