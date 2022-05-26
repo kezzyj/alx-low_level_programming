@@ -8,7 +8,7 @@
 
 size_t list_len(const list_t *h)
 {
-	size_t length; 
+	size_t length;
 	const list_t *items = h;
 
 	for (length = 0; items != NULL; length++)
