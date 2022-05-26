@@ -1,5 +1,11 @@
 #include "lists.h"
 
+/**
+ * add_node_end - add a new node at the end of the linked list
+ * @head: a pointer to a pointer to the head struct fed in
+ * @str: the str fed in to add to the newly appended struct
+ * Return: a pointer to the first struct in the new linked list
+ */
 
 list_t *add_node_end(list_t **head, const char *str)
 {
@@ -13,7 +19,8 @@ list_t *add_node_end(list_t **head, const char *str)
 		;
 	first->str = strdup(str);
 	first->len = index;
-	
+	first->next = NULL;
+
 	if (*head == NULL)
 		*head = first;
 	else
