@@ -2,7 +2,8 @@
 
 /**
 * list_len - print length of all  elements of a list
-* @h: a linked list structur
+* @h: a linked list structure
+* @length: the number of items on the list
 * Return: a size_t variable which is a system specific integer
 */
 
