@@ -1,4 +1,4 @@
-#include "main.h"
+#include "lists.h"
 
 
 list_t *add_node_end(list_t **head, const char *str)
@@ -15,11 +15,11 @@ list_t *add_node_end(list_t **head, const char *str)
 	first->len = index;
 	
 	if (*head == NULL)
-		*head = new;
+		*head = first;
 	else
 	{
-		for (; *head->next == NULL;)
-		*head-> = new;
+		for (; (*head)->next == NULL;)
+		(*head)->next = first;
 	}
-	return (new);
+	return (first);
 }
