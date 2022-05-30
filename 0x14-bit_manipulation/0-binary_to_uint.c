@@ -1,23 +1,22 @@
 #include "main.h"
 
+/**
+ *  binary_to_uint -  fucntioh to print decimal to binary convertion
+ *  @b: binary variable
+ *  Return: return converted decimal
+ */
 
 unsigned int binary_to_uint(const char *b)
 {
-
 	unsigned int ret = 0;
-
 	int i, j;
 
-
-
 	if (b == NULL)
-
 		return (0);
-
 	for (i = 0; b[i + 1]; i++)
 	{
 
-		if (b[i] != '0' || b[i] != '1')
+		if (b[i] != '0' && b[i] != '1')
 
 			return (0);
 
