@@ -3,7 +3,7 @@
 /**
  * flip_bits - function to print flipped bit
  * @n: number to get the flipped bit from
- * @m the flipped bit 
+ * @m: the index of the bit flipped 
  * Return: return flipped bit
  */
 
